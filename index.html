@@ -8,40 +8,47 @@
 </head>
 <body>
     <header>
-        <h1>Jack Simms</h1>
-        <img src="./img/jack.jpg" alt="Jack Simms">
-        <h5>First Class BSc (Hons) Software Engineering Graduate</h5>
-        <button onclick="window.open('./pdf/CV.pdf');" class="button">View CV</button>
+        <nav>
+            <div class="logo-container">
+                <img src="./img/jack.jpg" alt="Jack Simms" class="logo-img">
+                <h1 class="logo-text">Jack Simms</h1>
+            </div>
+            <button onclick="window.open('./pdf/CV.pdf');" class="button">View CV</button>
+        </nav>
+        <div class="hero">
+            <h3 class="hero-text">First Class BSc (Hons) Software Engineering Graduate</h3>
+        </div>
     </header>
     <main>
-        <div class="projects">
+        <section class="projects">
             <h2>Works</h2>
             <ul>
-
                 <li><a href="https://softwaresimms.github.io/portfolio/" target="_blank">Scalable Software Engineering Video Resources</a></li>
                 <li><a href="https://www.youtube.com/watch?v=_RAQONl2a1E" target="_blank">External Brain Memory Short Video</a></li>
                 <li><a href="./pdf/FYP.pdf" target="_blank">Dissertation Report</a></li>
                 <li><a href="./pdf/Ethical.pdf" target="_blank">Pentration Test Report</a></li>
                 <li><a href="./pdf/Usability.pdf" target="_blank">Usability Testing Report</a></li>
-
             </ul>
-        </div>
+        </section>
 
-        <div class="contacts">
+        <section class="contacts">
             <h2>Contact Me</h2>
             <ul>
-
                 <li><a href="https://www.linkedin.com/in/jacksimms77/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://github.com/SoftwareSimms" target="_blank">Github</a></li>
                 <li>Email: <a href="mailto:jacksimms77@gmail.com">jacksimms77@gmail.com</a></li>
-
-
             </ul>
-        </div>
+        </section>
 
-        <div class="video-player">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/M36_MS8qA0I" frameborder="0" allowfullscreen>My first professional tech conference presentation on embracing mistakes in Agile teams, held live at ACCU 23!</iframe>
-        </div>
+        <section class="video-section">
+            <h2>Conference Presentation</h2>
+            <ul>
+                <li>My first professional tech conference presentation on embracing mistakes in Agile teams, held live at ACCU 23!</li>
+            </ul>
+            <div class="video-player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M36_MS8qA0I" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 Jack Simms. All rights reserved.</p>
