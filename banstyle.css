@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.apng-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.bananaVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+    display: none;
+}
+
+.bananaOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.disc {
+    margin: 3% 0;  /* Adjust this margin for the vertical space between the links */
+}
+
+
+.bananaVideo {
+    /* ... other styles ... */
+    filter: brightness(115%) saturate(110%);
+}
+
+.bananaOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* ensure this is above the video layer */
+}
+
+/* Generic styles for clickable areas */
+.clickArea {
+    display: block;
+    width: 100%;     
+    cursor: pointer; 
+    background-color: rgba(255, 0, 0, 0.1); /* OPTIONAL: Red tint for visualization during testing */
+}
+
+/* Adjusted heights for each clickable area based on the banana disc positions and sizes */
+.clickArea:nth-child(1) {
+    height: 32%; /* For the top disc */
+}
+
+.clickArea:nth-child(2) {
+    height: 18%; /* For the second disc */
+    top: 30%; /* This pushes the second clickable area right below the first */
+}
+
+.clickArea:nth-child(3) {
+    height: 20%; /* Example: Adjust as needed for the third disc */
+    top: 50%; /* Adjust according to the combined height of the first and second areas */
+}
+
+.clickArea:nth-child(4) {
+    height: 30%; /* Example: Adjust as needed for the fourth disc */
+    top: 75%; /* Adjust according to the combined height of the first, second, and third areas */
+}
+
+#peelButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 215, 0, 0.8); /* gold with some transparency */
+    border-radius: 5px;
+    z-index: 15; /* to ensure the button is above other elements */
+    transition: opacity 0.5s; /* smooth fade-out effect */
+}
+
+#peelButton:hover {
+    background-color: rgba(255, 223, 0, 0.9); /* slightly brighter gold on hover */
+}
+
+
+/* For wide screens */
+@media (min-aspect-ratio: 16/9) {
+    .bananaVideo[data-orientation="wide"] {
+        display: block;
+    }
+}
+
+/* For narrow screens */
+@media (max-aspect-ratio: 9/16) {
+    .bananaVideo[data-orientation="narrow"] {
+        display: block;
+    }
+    .disc {
+        margin: 10% 0;  /* Adjust this margin for the vertical space between the links */
+    }
+}
+
+/* For wide screens including most tablets */
+@media (min-aspect-ratio: 4/3) {
+    .bananaVideo[data-orientation="wide"] {
+        display: block;
+    }
+}
+
+/* For narrow screens */
+@media (max-aspect-ratio: 3/4) {
+    .bananaVideo[data-orientation="narrow"] {
+        display: block;
+    }
+}
+s

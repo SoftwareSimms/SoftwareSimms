@@ -5,54 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack Simms</title>
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banstyle.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo-container">
-                <img src="./img/jack.jpg" alt="Jack Simms" class="logo-img">
-                <h1 class="logo-text">Jack Simms</h1>
-            </div>
-            <button onclick="window.open('./pdf/CV.pdf');" class="button">View CV</button>
-        </nav>
-        <div class="hero">
-            <h2 class="hero-text">First Class BSc (Hons) Software Engineering Graduate</h2>
-        </div>
-    </header>
-    <main>
-        <section class="projects">
-            <h2>Works</h2>
-            <ul>
-                <li><a href="https://softwaresimms.github.io/portfolio/" target="_blank">Scalable Software Engineering Video Resources</a></li>
-                <li><a href="https://www.youtube.com/watch?v=_RAQONl2a1E" target="_blank">External Brain Memory Short Video</a></li>
-                <li><a href="./pdf/FYP.pdf" target="_blank">Dissertation Report</a></li>
-                <li><a href="./pdf/Ethical.pdf" target="_blank">Penetration Test Report</a></li>
-                <li><a href="./pdf/Usability.pdf" target="_blank">Usability Testing Report</a></li>
-            </ul>
-        </section>
+    <video id="wideVideo" class="bananaVideo" muted playsinline>
+        <source src="./img/wide.mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <video id="narrowVideo" class="bananaVideo" muted playsinline>
+        <source src="./img/Final.mp4">
+        Your browser does not support the video tag.
+    </video>    
 
-        <section class="contacts">
-            <h2>Contact Me</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/jacksimms77/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/SoftwareSimms" target="_blank">Github</a></li>
-                <li>Email: <a href="mailto:jacksimms77@gmail.com">jacksimms77@gmail.com</a></li>
-            </ul>
-        </section>
+    <div class="bananaOverlay">
+        <div class="clickArea" onclick="location.href='#link1';"></div>
+        <div class="clickArea" onclick="location.href='#link2';"></div>
+        <div class="clickArea" onclick="location.href='#link3';"></div>
+        <div class="clickArea" onclick="location.href='#link4';"></div>
+    </div>    
 
-        <section class="video-section">
-            <h2>Conference Presentation</h2>
-            <ul>
-                <li>My first professional tech conference presentation on embracing mistakes in Agile teams, held live at ACCU 23!</li>
-            </ul>
-            <div class="video-player">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/M36_MS8qA0I" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Jack Simms. All rights reserved.</p>
-    </footer>
+    <script>
+const wideVideo = document.getElementById('wideVideo');
+const narrowVideo = document.getElementById('narrowVideo');
+
+let selectedVideo;
+if (window.innerWidth / window.innerHeight > 1) {
+    selectedVideo = wideVideo;
+    narrowVideo.style.display = "none";
+} else {
+    selectedVideo = narrowVideo;
+    wideVideo.style.display = "none";
+}
+
+selectedVideo.currentTime = 0; // Ensure the first frame is displayed
+selectedVideo.style.display = "block"; // Make sure the video is visible but paused
+
+// Function to play the video when the screen is tapped
+function playVideoOnTap() {
+    selectedVideo.play();
+
+    // Remove the event listener after the video starts playing
+    document.removeEventListener('click', playVideoOnTap);
+}
+
+// Add an event listener to the document
+document.addEventListener('click', playVideoOnTap);
+
+selectedVideo.addEventListener('timeupdate', () => {
+    if (selectedVideo.currentTime > 4) {
+        selectedVideo.pause();
+    }
+});
+
+
+    </script>
 </body>
 </html>
