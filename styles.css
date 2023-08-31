@@ -1,0 +1,52 @@
+body {
+    background-color: #1a1a1a; /* off-black color */
+    margin: 0;
+    font-family: 'eina 01', sans-serif; /* Assuming you've added 'eina 01' font in your project */
+}
+
+nav {
+    background-color: orange;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 15px; /* Increase space between letters */
+    color: white;
+    text-shadow: 2px 0 lightblue;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.profile-image {
+    width: 20%; /* Making the circle smaller */
+    border-radius: 50%; /* Makes the image circular */
+    border: 10px solid yellow; /* Making the border thicker */
+    object-fit: cover; /* Ensures the image fits inside the circle properly */
+}
+
+.details {
+    width: 75%; /* Providing more space for the green box */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-me-box {
+    border: 1px solid green;
+    padding: 20px;
+    width: 110%; /* Making the green box run off the screen */
+    overflow: hidden; /* Ensures contents inside don't overflow the box */
+}
+
+.about-me-box h3 {
+    color: yellow;
+    font-size: 20px;
+}
