@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,58 +8,25 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="banstyle.css">
 </head>
+
 <body>
     <video id="wideVideo" class="bananaVideo" muted playsinline>
         <source src="./img/wide.mp4">
         Your browser does not support the video tag.
     </video>
-    
+
     <video id="narrowVideo" class="bananaVideo" muted playsinline>
         <source src="./img/Final.mp4">
         Your browser does not support the video tag.
-    </video>    
+    </video>
 
     <div class="bananaOverlay">
-        <div class="clickArea" onclick="location.href='#link1';"></div>
-        <div class="clickArea" onclick="location.href='#link2';"></div>
-        <div class="clickArea" onclick="location.href='#link3';"></div>
-        <div class="clickArea" onclick="location.href='#link4';"></div>
-    </div>    
-
-    <script>
-const wideVideo = document.getElementById('wideVideo');
-const narrowVideo = document.getElementById('narrowVideo');
-
-let selectedVideo;
-if (window.innerWidth / window.innerHeight > 1) {
-    selectedVideo = wideVideo;
-    narrowVideo.style.display = "none";
-} else {
-    selectedVideo = narrowVideo;
-    wideVideo.style.display = "none";
-}
-
-selectedVideo.currentTime = 0; // Ensure the first frame is displayed
-selectedVideo.style.display = "block"; // Make sure the video is visible but paused
-
-// Function to play the video when the screen is tapped
-function playVideoOnTap() {
-    selectedVideo.play();
-
-    // Remove the event listener after the video starts playing
-    document.removeEventListener('click', playVideoOnTap);
-}
-
-// Add an event listener to the document
-document.addEventListener('click', playVideoOnTap);
-
-selectedVideo.addEventListener('timeupdate', () => {
-    if (selectedVideo.currentTime > 4) {
-        selectedVideo.pause();
-    }
-});
-
-
-    </script>
+        <div class="clickArea" data-link="about.html"></div>
+        <div class="clickArea" data-link="portfolio.html"></div>
+        <div class="clickArea" data-link="videos.html"></div>
+        <div class="clickArea" data-link="contact.html"></div>
+    </div>
+    <script src="./animation.js"></script>
 </body>
+
 </html>
