@@ -28,7 +28,7 @@ function playVideoOnTap() {
 selectedVideo.addEventListener('click', playVideoOnTap);  // Changed this to selectedVideo
 
 selectedVideo.addEventListener('timeupdate', () => {
-    if (selectedVideo.currentTime > 2.2) {
+    if (selectedVideo.currentTime > 2.3) {
         console.log("Video time exceeded 4 seconds");
         selectedVideo.pause();
         overlay.classList.remove('disabled');
