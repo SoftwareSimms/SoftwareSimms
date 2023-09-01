@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+nav {
+    background-color: #FF6700;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 64px;
+    letter-spacing: 50px;
+    color: white;
+    text-shadow: 5px 0 lightblue;
+    position: relative;
+}
+
+.back-to-menu {
+    position: absolute;
+    left: 10px;
+    top: 55%;
+    transform: translateY(-50%);
+    text-decoration: none;
+}
+
+.menu-icon {
+    height: 1.5em;
+    width: auto;
+}
+
+.videos-container {
+    padding: 50px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-entry h2 {
+    color: rgb(203, 255, 160);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.video-entry p {
+    color: yellow;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        text-align: right;
+        font-size: 1.5em;
+        letter-spacing: 0.5em;
+        color: white;
+        text-shadow: 5px 0 lightblue;
+    }
+
+    .back-to-menu {
+        left: 10px;
+        top: 55%;
+        transform: translateY(-50%);
+    }
+
+    .menu-icon {
+        height: 1.5em;
+        width: auto;
+    }
+
+    .videos-container {
+        padding: 20px;
+    }
+}
