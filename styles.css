@@ -1,38 +1,69 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background-color: #1a1a1a; /* off-black color */
+    background-color: #1a1a1a;
     margin: 0;
-    font-family: 'eina 01', sans-serif; /* Assuming you've added 'eina 01' font in your project */
+    font-family: 'Montserrat-Bold', sans-serif;
 }
 
 nav {
-    background-color: orange;
+    background-color: #FF6700;
     padding: 25px 0;
     text-align: center;
-    font-size: 28px;
-    letter-spacing: 15px; /* Increase space between letters */
+    font-size: 64px;
+    letter-spacing: 50px;
     color: white;
-    text-shadow: 2px 0 lightblue;
+    text-shadow: 5px 0 lightblue;
+    position: relative;
 }
+
+.back-to-menu {
+    position: absolute;
+    left: 10px; /* Adjust as necessary for padding from the left side */
+    top: 55%;
+    transform: translateY(-50%);
+    text-decoration: none;
+}
+
+.menu-icon {
+    height: 1.5em; /* You can adjust this based on how big you want the icon to be */
+    width: auto;
+}
+
 
 .profile-container {
     display: flex;
-    justify-content: space-between;
     padding: 50px;
+    overflow-x: hidden;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
 }
 
 .profile-image {
-    width: 20%; /* Making the circle smaller */
-    border-radius: 50%; /* Makes the image circular */
-    border: 10px solid yellow; /* Making the border thicker */
-    object-fit: cover; /* Ensures the image fits inside the circle properly */
+    width: 100%;  /* Adjust based on the desired circle size within the container */
+    border-radius: 50%;
+    border: 10px solid yellow;
+    object-fit: cover;
 }
 
 .details {
-    width: 75%; /* Providing more space for the green box */
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    color: rgb(203, 255, 160);
 }
+
 
 .details h2 {
     font-size: 24px;
@@ -40,13 +71,32 @@ nav {
 }
 
 .about-me-box {
-    border: 1px solid green;
+    border-top: 1px solid green;
+    border-left: 1px solid green;
+    border-bottom: 1px solid green;
+    border-right: none; 
     padding: 20px;
-    width: 110%; /* Making the green box run off the screen */
-    overflow: hidden; /* Ensures contents inside don't overflow the box */
+    width: 90%;  /* This ensures that it fits the entire width of the .details container */
 }
 
 .about-me-box h3 {
     color: yellow;
     font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container, .details {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 60%;
+        margin-top: 0;
+        margin-bottom: 30px;  /* Add some spacing below the image on mobile */
+    }
 }
