@@ -3,8 +3,6 @@ const narrowVideo = document.getElementById('narrowVideo');
 const clickAreas = document.querySelectorAll('.clickArea');
 const overlay = document.querySelector('.bananaOverlay');
 
-console.log("Script loaded");
-
 let selectedVideo;
 if (window.innerWidth / window.innerHeight > 1) {
     selectedVideo = wideVideo;
@@ -14,30 +12,33 @@ if (window.innerWidth / window.innerHeight > 1) {
     wideVideo.style.display = "none";
 }
 
-selectedVideo.currentTime = 0;
-selectedVideo.style.display = "block";
-
 overlay.classList.add('disabled');
 
+// Set up the video for playback from the beginning
+selectedVideo.currentTime = 0;
+selectedVideo.addEventListener('click', playVideoOnTap);
+
+// Function to handle video play on tap/click
 function playVideoOnTap() {
-    console.log("Screen tapped");
     selectedVideo.play();
-    selectedVideo.removeEventListener('click', playVideoOnTap);  // Changed this to selectedVideo
+    selectedVideo.removeEventListener('click', playVideoOnTap);
 }
 
-selectedVideo.addEventListener('click', playVideoOnTap);  // Changed this to selectedVideo
-
+// Event listener to pause video when reaching the specified time and enable clickable overlay
 selectedVideo.addEventListener('timeupdate', () => {
     if (selectedVideo.currentTime > 2.3) {
-        console.log("Video time exceeded 4 seconds");
         selectedVideo.pause();
         overlay.classList.remove('disabled');
     }
 });
 
+// Display the selected video
+selectedVideo.style.display = "block";
+
+// Event listeners for clickable areas
 clickAreas.forEach(area => {
     area.addEventListener('click', function() {
-        console.log("Clickable area tapped");
+        // Navigate to the specified page
         const link = area.getAttribute('data-link');
         if (link) {
             window.location.href = link;

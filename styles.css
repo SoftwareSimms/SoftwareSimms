@@ -5,6 +5,15 @@
     font-style: normal;
 }
 
+.hidden {
+    display: none;
+}
+
+.bananaVideo.initial {
+    display: hidden;
+}
+
+
 body {
     background-color: #1a1a1a;
     margin: 0;
@@ -98,5 +107,28 @@ nav {
         width: 60%;
         margin-top: 0;
         margin-bottom: 30px;  /* Add some spacing below the image on mobile */
+    }
+
+    nav {
+        background-color: #FF6700;
+        text-align: right;
+        font-size: 1.5em;
+        letter-spacing: 0.5em;
+        color: white;
+        text-shadow: 5px 0 lightblue;
+        position: relative;
+    }
+    
+    .back-to-menu {
+        position: absolute;
+        left: 10px; /* Adjust as necessary for padding from the left side */
+        top: 55%;
+        transform: translateY(-50%);
+        text-decoration: none;
+    }
+    
+    .menu-icon {
+        height: 1.5em; /* You can adjust this based on how big you want the icon to be */
+        width: auto;
     }
 }

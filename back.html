@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack Simms</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="banstyle.css">
+    <style>
+        body {
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            filter: brightness(115%) saturate(110%);
+        }
+    </style>
+</head>
+<body>
+    <div class="bananaOverlay">
+        <div class="clickArea" data-link="about.html"></div>
+        <div class="clickArea" data-link="portfolio.html"></div>
+        <div class="clickArea" data-link="videos.html"></div>
+        <div class="clickArea" data-link="contact.html"></div>
+    </div>
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const body = document.body;
+    const clickAreas = document.querySelectorAll('.clickArea');
+
+    // Choose the right background image based on the screen's aspect ratio
+    if (window.innerWidth / window.innerHeight > 1) {
+        // For wider screens
+        body.style.backgroundImage = 'url(./img/endw.jpg)';
+    } else {
+        // For narrower screens
+        body.style.backgroundImage = 'url(./img/end.jpg)';
+    }
+
+    // Event listeners for clickable areas
+    clickAreas.forEach(area => {
+        area.addEventListener('click', function() {
+            // Navigate to the specified page
+            const link = area.getAttribute('data-link');
+            if (link) {
+                window.location.href = link;
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

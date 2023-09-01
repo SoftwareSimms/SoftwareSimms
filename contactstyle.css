@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4b4b4b;
+    font-family: 'Montserrat-Bold';
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #919191;
+    border-bottom: 5px solid blue;
+    padding: 8px 15px; /* Increased padding slightly */
+}
+
+.contact-header {
+    color: yellow;
+    font-size: 2.5rem; /* Increased font-size for better visibility */
+    text-shadow: 4px 2px 0 orange;
+}
+
+.icon-text span {
+    margin-right: 3px;
+}
+
+p, a {
+    color: white;
+    text-decoration: none;
+    word-break: break-all; /* ensures the text breaks into the next line when needed */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.icon-text img {
+    margin-right: 5px;
+    height: 2em;
+    width: auto;
+}
+
+.contact-box {
+    background-color: #101010;
+    border: 3px solid blue;
+    margin: 1em;
+    padding: 0.5em;
+    color: yellow;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.icon-section {
+    border: 2px solid green;
+    padding: 5px;
+    text-align: right;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+.go-back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.menu-icon {
+    height: 2.5em; /* Increased size for better visibility */
+    width: auto;
+    cursor: pointer;
+}
+
+/* Media queries for screens larger than 600px */
+@media (min-width: 600px) {
+    nav {
+        padding: 20px 50px;
+    }
+
+    .contact-header {
+        font-size: 68px;
+        text-shadow: 4px 4px 0 orange;
+    }
+
+    .icon-text span {
+        margin-right: 10px;
+    }
+
+    .icon-text img {
+        margin-right: 10px;
+        height: 5em;
+    }
+
+    .contact-box {
+        border: 5px solid blue;
+        margin: 2em;
+        padding: 1.5em;
+    }
+
+    .icon-section {
+        padding: 10px;
+    }
+
+    .icon-text {
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        height: 40px;
+    }
+}
