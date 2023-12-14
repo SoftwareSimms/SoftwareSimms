@@ -21,14 +21,14 @@ body {
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #FF6700;
-    padding: 25px 0;
-    text-align: center;
-    font-size: 64px;
-    letter-spacing: 50px;
-    color: white;
-    text-shadow: 5px 0 lightblue;
-    position: relative;
+    padding: 8px 15px;
+    font-size: 2.5rem;
+    text-shadow: 4px 2px 0 orange;
+    color: yellow;
 }
 
 .back-to-menu {

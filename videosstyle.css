@@ -5,34 +5,42 @@
     font-style: normal;
 }
 
-body {
-    background-color: #1a1a1a;
+body, html {
     margin: 0;
-    font-family: 'Montserrat-Bold', sans-serif;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat-Bold';
+    overflow-x: hidden;
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #FF6700;
-    padding: 25px 0;
-    text-align: center;
-    font-size: 64px;
-    letter-spacing: 50px;
-    color: white;
-    text-shadow: 5px 0 lightblue;
-    position: relative;
+    padding: 8px 15px;
 }
 
-.back-to-menu {
-    position: absolute;
-    left: 10px;
-    top: 55%;
-    transform: translateY(-50%);
+.portfolio-header {
+    font-size: 2.5rem;
+    text-shadow: 4px 2px 0 orange;
+    color: yellow;
+}
+
+p, h2, a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .menu-icon {
-    height: 1.5em;
+    height: 2.5em;
     width: auto;
+    cursor: pointer;
 }
 
 .videos-container {
@@ -41,12 +49,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.video-entry h2 {
-    color: rgb(203, 255, 160);
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .video-entry p {
