@@ -10,9 +10,9 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-
     font-family: 'Montserrat-Bold';
     overflow-x: hidden;
+    background-color: #F9F9F9;
 }
 
 nav {
@@ -29,11 +29,15 @@ nav {
     color: yellow;
 }
 
-p, h2, a {
+p, h2, h3, h4, a {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
+p {
+    font-size: 0.7em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -53,8 +57,10 @@ a:hover {
 
 .project {
     border: 2px solid yellow;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .go-back-button {
@@ -73,11 +79,32 @@ a:hover {
     cursor: pointer;
 }
 
-.project a {
-    display: block;
+.github-repo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.repo-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.repo-list ul li {
+    margin: 5px 0;
+}
+
+.project-link {
+    display: inline-block;
     margin-top: 10px;
-    color: ;
-    text-decoration: underline;
+    background-color: #FF6700;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    background-color: #e05e00;
 }
 
 @media (min-width: 600px) {

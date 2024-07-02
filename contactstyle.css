@@ -20,23 +20,23 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #FF6700;
-    padding: 8px 15px; /* Increased padding slightly */
+    padding: 8px 15px;
 }
 
 .contact-header {
     color: yellow;
-    font-size: 2.5rem; /* Increased font-size for better visibility */
+    font-size: 2.5rem;
     text-shadow: 4px 2px 0 orange;
 }
 
 .icon-text span {
-    margin-right: 3px;
+    margin-right: 5px;
 }
 
 p, a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    word-break: break-all; /* ensures the text breaks into the next line when needed */
+    word-break: break-word;
 }
 
 a:hover {
@@ -44,29 +44,31 @@ a:hover {
 }
 
 .icon-text img {
-    margin-right: 5px;
+    margin-right: 10px;
     height: 2em;
     width: auto;
 }
 
 .contact-box {
-    margin: 1em;
-    padding: 0.5em;
+    margin: 2em;
+    padding: 1.5em;
     color: #FF6700;
-    max-width: 100%;
+    max-width: 80%;
     box-sizing: border-box;
+    text-align: left;
+    border: 2px solid yellow;
+    border-radius: 10px;
 }
 
 .icon-section {
-    border: 2px solid yellow;
-    padding: 2em;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .icon-text {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
     flex-wrap: wrap;
 }
 
@@ -81,12 +83,11 @@ a:hover {
 }
 
 .menu-icon {
-    height: 2.5em; /* Increased size for better visibility */
+    height: 2.5em;
     width: auto;
     cursor: pointer;
 }
 
-/* Media queries for screens larger than 600px */
 @media (min-width: 600px) {
     nav {
         padding: 20px 50px;
@@ -102,21 +103,22 @@ a:hover {
     }
 
     .icon-text img {
-        margin-right: 10px;
-        height: 5em;
+        height: 3em;
     }
 
     .contact-box {
-        margin: 2em;
-        padding: 3em;
+        margin: 2em auto;
+        padding: 2em;
+        max-width: 600px;
     }
 
     .icon-section {
-        padding: 10px;
+        padding: 2em;
+        gap: 30px;
     }
 
     .icon-text {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     .menu-icon {

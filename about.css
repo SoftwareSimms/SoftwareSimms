@@ -12,6 +12,7 @@ body, html {
     height: 100%;
     font-family: 'Montserrat-Bold';
     overflow-x: hidden;
+    background-color: #F9F9F9;
 }
 
 nav {
@@ -37,7 +38,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
 .go-back-button {
     background: none;
     border: none;
@@ -56,32 +56,38 @@ a:hover {
 
 .profile-container {
     display: flex;
+    flex-wrap: wrap;
     padding: 50px;
     overflow-x: hidden;
+    background-color: white;
+    border: 1px solid #FF6700;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 20px auto;
 }
 
 .profile-image {
-    width: 100%;  /* Adjust based on the desired circle size within the container */
+    width: 100%;  
     border-radius: 50%;
     border: 5px solid yellow;
     object-fit: cover;
 }
 
 .details {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
     color: rgb(0, 0, 0);
 }
-
 
 .details h2 {
     font-size: 24px;
@@ -92,14 +98,20 @@ a:hover {
     border-top: 1px solid yellow;
     border-left: 1px solid yellow;
     border-bottom: 1px solid yellow;
-    border-right: none; 
     padding: 20px;
-    width: 90%;  /* This ensures that it fits the entire width of the .details container */
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.about-me-box h3 {
-    color: #FF6700;
-    font-size: 20px;
+.about-me-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.about-me-box ul li {
+    margin-bottom: 5px;
 }
 
 @media (min-width: 600px) {
@@ -112,13 +124,13 @@ a:hover {
         text-shadow: 4px 4px 0 orange;
     }
 
-    .portfolio-box {
-        margin: 2em;
-        padding: 1.5em;
+    .profile-container {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .project {
-        padding: 15px;
+    .image-container, .details {
+        width: 48%;
     }
 
     .menu-icon {
