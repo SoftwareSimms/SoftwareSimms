@@ -1,4 +1,4 @@
-I'm Jack Simms, a versatile and dynamic Technical Project Manager with a strong foundation in DevOps and Full Stack Development. With a First-Class BSc (Hons) in Software Engineering, I have a proven track record in leading innovative IT projects, driving efficiency, and delivering exceptional results. My technical expertise spans Python, JavaScript, Azure, Kubernetes, and Docker, among others.
+I'm Jack Simms, a versatile and dynamic Technical Project Manager with a strong foundation in DevOps and Full Stack Development. With a First-Class BSc (Hons) in Software Engineering, I have a proven track record in leading innovative IT projects, driving efficiency, and delivering exceptional results. My technical expertise spans Python, JavaScript, Azure, Kubernetes and Docker, among others.
 
 ## 🏆 Highlights
 - **Project Management:** Successfully managed and delivered multiple technical projects, enhancing efficiency and user satisfaction.
@@ -8,8 +8,8 @@ I'm Jack Simms, a versatile and dynamic Technical Project Manager with a strong 
 ## 🚀 Featured Projects
 
 ### [Helpdesk](https://github.com/SoftwareSimms/helpdesk)
-- **Description:** A helpdesk software solution developed for Chesterfield Group, leveraging AI to improve support efficiency for over 400 users.
-- **Technologies Used:** Python, JavaScript, Azure, Kubernetes, Docker
+- **Description:** A helpdesk software solution developed for Chesterfield Group, leveraging AI and Industry Standard Usability Testing to improve support efficiency for over 400 users.
+- **Technologies Used:** Vue.js, Node.js Azure, SQL
 - **Role:** Project Manager and Lead Developer
 
 ### [LinkHub](https://github.com/SoftwareSimms/linkhub)
