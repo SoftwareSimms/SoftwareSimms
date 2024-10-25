@@ -2,7 +2,7 @@ I'm Jack Simms, a versatile and dynamic Technical Project Manager with a strong 
 
 ## 🚀 Featured Projects
 
-### [Kaufman London Employee Hub](https://github.com/chesterfieldgroup/kaufman-london-hub)
+### [Kaufman London Employee Hub](https://github.com/SoftwareSimms/Kaufman-London-Hub)
 - **Description:** An employee hub web app developed for H.W Kaufman London, replacing HiBob and other external 3rd party vendors and their costs to provide bespoke IT operation solutions across 5 divisions of 400+ employees. 
 - **Technologies Used:** Vue.js, Node.js, Azure, SQL
 
@@ -14,7 +14,7 @@ I'm Jack Simms, a versatile and dynamic Technical Project Manager with a strong 
 - **Description:** A JavaScript-based solution utilising NFC and vCard technology to provide brokers of the H.W Kaufman Group with seamless in-person and digital contact sharing. In production and working successfully at various conferences.
 - **Technologies Used:** JavaScript, Node.js, HTML, CSS
 
-### [CI/CD Pipeline for Data Analysis](https://github.com/SoftwareSimms/ci-cd-pipeline)
+### [CI/CD Pipeline for Data Analysis](https://github.com/SoftwareSimms/Cranbrook-DB)
 - **Description:** A CI/CD pipeline using Azure, SQL and Node.js. Transforming monthly data analysis into a live daily feed and increasing business analytics efficiency by 2900%.
 - **Technologies Used:** Node.js, Azure SQL, CI/CD
 
