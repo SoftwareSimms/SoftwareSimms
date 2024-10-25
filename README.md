@@ -2,7 +2,7 @@ I'm Jack Simms, a versatile and dynamic Technical Project Manager with a strong 
 
 ## 🚀 Featured Projects
 
-### [Helpdesk](https://github.com/chesterfieldgroup/kaufman-london-hub)
+### [Kaufman London Employee Hub](https://github.com/chesterfieldgroup/kaufman-london-hub)
 - **Description:** An employee hub web app developed for H.W Kaufman London, replacing HiBob and other external 3rd party vendors and their costs to provide bespoke IT operation solutions across 5 divisions of 400+ employees. 
 - **Technologies Used:** Vue.js, Node.js, Azure, SQL
 
