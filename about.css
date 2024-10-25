@@ -54,15 +54,23 @@ a:hover {
     cursor: pointer;
 }
 
+/* Responsive scaling on .portfolio-header */
+.portfolio-header {
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-shadow: 4px 2px 0 orange;
+    color: yellow;
+}
+
+/* Improved flex for .profile-container */
 .profile-container {
     display: flex;
     flex-wrap: wrap;
     padding: 50px;
-    overflow-x: hidden;
     background-color: white;
     border: 1px solid #FF6700;
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
 .image-container {
@@ -70,7 +78,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 200px;
+    max-width: 40%;
     margin: 0 auto 20px auto;
 }
 
@@ -87,6 +95,20 @@ a:hover {
     margin: 0 auto;
     text-align: center;
     color: rgb(0, 0, 0);
+}
+
+/* Styling for new sections */
+.skills-section, .fun-facts-section {
+    padding: 20px;
+    border-top: 1px solid yellow;
+    border-left: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+    margin-top: 20px;
+}
+
+.skills-section h3, .fun-facts-section h3 {
+    font-size: 1.5rem;
+    color: #FF6700;
 }
 
 .details h2 {
@@ -114,7 +136,7 @@ a:hover {
     margin-bottom: 5px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1128px) {
     nav {
         padding: 20px 50px;
     }
