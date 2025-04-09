@@ -1,6 +1,6 @@
-I'm Jack Simms, a versatile and dynamic Technical Project Manager with a strong foundation in DevOps and Full Stack Development. With a First-Class BSc (Hons) in Software Engineering, I have a proven track record in leading innovative IT projects, driving efficiency, and delivering exceptional results. My technical expertise spans Python, JavaScript, Azure, Kubernetes and Docker, among others.
 
-## 🚀 Featured Projects
+
+## Featured Projects
 
 ### [Kaufman London Employee Hub](https://github.com/SoftwareSimms/Kaufman-London-Hub)
 - **Description:** An employee hub web app developed for H.W Kaufman London, replacing HiBob and other external 3rd party vendors and their costs to provide bespoke IT operation solutions across 5 divisions of 400+ employees. 
@@ -26,17 +26,17 @@ I'm Jack Simms, a versatile and dynamic Technical Project Manager with a strong 
 - **Description:** A platform for crowdsourcing the project development of WhatCanIDoWithThis, enhancing user engagement and creativity.
 - **Technologies Used:** Chrome Extension, JavaScript
 
-## 📈 Skills
+## Skills
 - **Project Management:** Agile, Scrum, Kanban, Lean Startup
 - **Programming Languages:** JavaScript, SQL, Node.js, Python, C
 - **DevOps Tools:** Azure, Terraform, Kubernetes, Docker
 - **Web Technologies:** HTML, CSS, Bootstrap, Vue.js, JSON, Fetch API
 
-## 🎓 Education
+## Education
 - **University of Portsmouth:** First-Class BSc (Hons) in Software Engineering
 - **AiCore:** DevOps Engineering
 
-## 📫 Get in Touch
+## Get in Touch
 - **Email:** [jacksimms77@gmail.com](mailto:jacksimms77@gmail.com)
 - **LinkedIn:** [linkedin.com/in/jacksimms77](https://www.linkedin.com/in/jacksimms77)
 - **GitHub:** [github.com/SoftwareSimms](https://github.com/SoftwareSimms)
